@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-image: url(./images/spongebob-rainbow-meme_3d8e8cbe-0d72-45ed-82a3-b1cbbeab999c.webp);
+    background-size: cover;
+}
+
+h1 {
+    margin:80px;
+    font-family: 'Knewave';
+    font-size: 3rem;
+    color:#c700a9;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.calculette {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9ebeb;
+    border:1px #516b6b solid;
+    gap:20px;
+    border-radius: 2rem;
+    color:#516b6b;
+    height:40%;
+    box-shadow: 5px 10px 3px rgba(81, 107, 107, 0.7);
+}
+
+.emojis {
+    font-size: 3rem;
+}
+
+.mini-calculette {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:3rem;
+    gap:1rem;
+    
+}
+
+input {
+    width:20%;
+    height: 2rem;
+    border: 2px #516b6b solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    width:5%;
+    height: 2rem;
+    border: 1px #516b6b solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button:hover {
+    border:2px #516b6b solid; 
+}
+
+.reset {
+    width:10%;
+    height: 4.5rem;
+    border-radius: 10px;
+    text-align: center;
+    padding:10px;
+}
+
+.reset:hover {
+    border: 2px #516b6b solid;
+}

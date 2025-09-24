@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stéphou :3 | Exercice_2_Bases_DOM</title>
+    
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="formulaire">
+    <label for="prenom">Quel est ton prenom ?</label><br>
+        <input id="prenom" type="text" placeholder="Stéphane"><br>
+    <label for="nom">Quel est ton nom ?</label><br>
+        <input id="nom" type="text" placeholder="Bern"><br>
+    <label for="age">Quel est ton âge ?</label><br>
+        <input id="age" type="number" placeholder="61"><br>
+        <!-- Mettre directement "type=number" pour que le js sache que c'est un nombre ! -->
+    <label for="urlimage">Colle ici l'url d'une image qui te représente :</label><br>
+        <input id="urlimage" type="text" placeholder="https://Moi-Stephane.com/ma-tete.jpg"><br>
+
+    <button id="valider">Valider</button>
+    </section>
+
+    <section class="reponses-themes">
+        <div class="reponses-form">
+            <div id="theme" class="clair" >
+                <img id="image-moi" class="image-moi" src="" alt="image qui me représente"> <!--!Comment rendre le alt invisible ?-->
+                <p id="resultat"></p>
+            </div>
+        </div>
+
+        <div class="themes">
+            <button id="btn_clair">Thème clair</button>
+            <button id="btn_dark">Thème sombre</button>
+            <button id="btn_choix">Thème au choix</button>
+        </div>
+    </section>
+</body>
+</html>

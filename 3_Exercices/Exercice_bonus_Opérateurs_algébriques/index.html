@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-calculette</title>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Chewy&family=Combo&family=Fira+Code:wght@300..700&family=Knewave&family=Limelight&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="titre">
+        <h1>✨Calcula, la calculette magique✨</h1>
+    </div>
+
+    <div class="calculette">
+        <div class="emojis">🪄✨🦄</div>
+
+        <div class="mini-calculette">
+
+            <input type="number" id="nb1">
+
+            <button type="button" id="addition">+</button>
+            <button type="button" id="soustraction">-</button>
+            <button type="button" id="multiplication">*</button>
+            <button type="button" id="division">/</button>
+            <button type="button" id="pourcentage">%</button>
+
+            <input type="number" id="nb2">
+
+            <div>=</div>
+
+            <input type="number" id="result" disabled>
+
+            <button type="button" id="reset" class="reset">Nouveau calcul 🧮</button>
+
+        </div>
+
+        <div class="emojis">🌈🔮🪬</div>
+    </div>
+    
+</body>
+</html>

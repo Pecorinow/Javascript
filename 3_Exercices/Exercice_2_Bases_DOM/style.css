@@ -1,0 +1,70 @@
+.clair {
+    background-color: white;
+    color:#201959;
+    padding:50px;
+    border-radius: 10px;
+}
+
+.imageMoi {
+    width:40%;
+} /*!Pourquoi ne s'affiche pas ?*/
+
+.dark {
+    background-color: #201959;
+    color:#bba1ff;
+    padding:50px;
+    border-radius: 10px;
+}
+
+body {
+    margin:50px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center; /*!Pourquoi ne se centre pas ?*/
+    gap:30px;
+    
+}
+
+.formulaire {
+    background-color: #bba1ff;
+    border-radius:10px;
+    padding:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    
+}
+
+input {
+    border-color: #bba1ff;
+    border-radius: 5px;
+    width: 300px;
+    height:30px; /*!Pourquoi ne dépasse pas 20px ?*/
+}
+
+.reponses-themes {
+    background-color: #bba1ff;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    gap:30px;
+    width:40%;
+    
+}
+
+button {
+    background-color:  #201959;
+    color:white;
+    border-radius: 10px;
+    border:10px;
+    padding:20px;
+    width:auto;
+    margin:20px;
+}
+

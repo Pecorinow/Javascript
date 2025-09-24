@@ -1,0 +1,16 @@
+.jour {
+    background-color : lightyellow;
+    color: tomato;
+}
+
+.nuit {
+    background-color: darkblue;
+    color: lightgoldenrodyellow;
+}
+
+.fond {
+    background-color: beige;
+    width: 6020px;
+    height: 1rem;
+}
+

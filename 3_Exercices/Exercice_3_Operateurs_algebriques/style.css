@@ -1,0 +1,21 @@
+main {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px
+}
+
+.calcul {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultats {
+    display:flex;
+    flex-direction: column;
+}

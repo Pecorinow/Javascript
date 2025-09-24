@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Exercice_3_Operateurs_algebriques</title>
+</head>
+<body>
+    <main>
+        <section class="calcul">
+
+            <form>
+                <label for="note">Note :</label>
+                <input id="note" type="number">
+
+                <label for="pct_pourboire">Pourcentage pourboire :</label>
+                <input id="pct_pourboire" type="number">
+
+                <label for="nombre_personnes">Nombre de personnes :</label>
+                <input id="nombre_personnes" type="number">
+            </form>
+            <button id="btn_calculer" type="button">Calculer</button>
+
+        </section>
+
+        <section class="resultats">
+
+            <p>Montant pourboire :</p>
+            <p id="mt_pourboire"></p>
+
+            <p>Montant par personne :</p>
+            <p id="mt_personne"></p>
+
+            <p>Montant total :</p>
+            <p id="mt_total"></p>
+
+            <button id="reinitialiser" type="button">Réinitialiser</button>
+            
+        </section>
+    </main>
+</body>
+</html>
