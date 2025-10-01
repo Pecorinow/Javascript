@@ -1,0 +1,45 @@
+// Etapes: 
+// 1) créer une variable pour tous les id :
+// - bouton facile
+// - bouton normal
+// - bouton difficile
+// - devine + fourchette de nombres selon le bouton cliqué
+// - test = nombre entré par l'utilisateur
+// - bouton valider
+// - nb-tentatives = nombre de trentatives restantes
+// - resultat = p qui affiche si on a juste, trop bas, trop élevé ou pas valide.
+
+// 2) addEventListener selon le bouton de niveau cliqué :
+// - BOUTON CLIQUÉ
+//  => 1. "Devine un prix entre ? et ?" = textContent de devine + fourchette de nombre selon niveau
+//     2. Donner une valeur ? à la variable de nb-tentatives selon niveau (5, 10 ou 20)
+//     3. `Nombre tentatives = ${?} ` = textContent de nb-tentatives
+//     4. Création d'un nombre random entre 0 et x = nouvelle variable nombre mystère
+
+// 3) Conditions selon le nombre entré :
+//  - SI nombre test n'est PAS VALIDE = pas un nombre OU str plus grand que 10 OU str plus petit que zéro
+//      => 1. "Il faut rentrer un résultat valide" = textContent de resultat
+
+//  - SINON SI nombre test = str PLUS PETIT que nombre mystère
+//      => 1. "Le nombre est plus élevé !" = textContent de resultat
+//         2. nb-tentatives = nb-tentatives -1 
+//              SI nb-tentatives = str  PLUS GRAND que 0
+//              => `Nombres tentatives = ${? -1} ` = textContent de nb-tentatives
+//              SINON :
+//              => `Raté, le nombre mystère était ${nombre mystère}` = textContent de resultat
+//              => "Tentatives épuisées" = textContent de nb tentatives
+
+
+
+//  - SINON SI  nombre test = str PLUS GRAND que nombre mystère
+//      => 1. "Le nombre est plus bas !" = textContent de resultat
+//         2. nb-tentatives = nb-tentatives -1 
+//              SI nb-tentatives = str  PLUS GRAND que 0
+//              => `Nombres tentatives = ${? -1} ` = textContent de nb-tentatives
+//              SINON :
+//              => `Raté, le nombre mystère était ${nombre mystère}` = textContent de resultat
+//              => "Tentatives épuisées" = textContent de nb tentatives      
+
+//  - SINON SI  nombre test === nombre mystère
+//      => 1. "Bravo !" = textContent de resultat
+//         2. reset nb-tentatives = 0

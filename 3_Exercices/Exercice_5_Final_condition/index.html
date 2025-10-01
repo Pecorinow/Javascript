@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script defer src="./main.js"></script>
     <title>Exercice 5 - Final destination</title>
 </head>
 <body>
-    <h1>Devine un prix pour gagner un prix !</h1>
+    <main>
+        <section>
+            <h1>💰 Devine un prix pour gagner un prix ! 💰</h1>
+            
+            <p class="p_intro">Bienvenue à <span>Devine un prix pour gagner un prix</span>, le jeu qui ne demande aucune connaissance, aucun QI ni aucun talent particulier si ce n'est celui de savoir taper sur un clavier !<br>
+            Relève le défi et viens affronter notre super calculateur !</p>
 
-    <p>Choisis ton niveau :</p>
-    <div class="niv"></div>
-        <button id="facile" type="button">Touriste ⛱️</button>
-        <button id="normal" type="button">Normal </button>
-        <button id="difficile" type="button">Dieu </button>
-    </div>
+            <p>Choisis ton niveau :</p>
+            <div class="niv">
+                <button id="facile" type="button">Touriste ⛱️</button>
+                <button id="normal" type="button">Normal 🙋‍♀️</button>
+                <button id="difficile" type="button">Dieu 🧿</button>
+            </div>
 
-    <p id="devine"></p>
+            <div class="image">
+                <img src="" alt="" class="img" id="img">
+            </div>
 
-    <input id="test" type="number">
+            <p id="devine"></p>
 
-    <button id="valider">C'est parti !</button>
+            <input id="nbTest" type="number">
 
-    <p>Tentatives restantes :</p>
-    <p id="nb-tentatives"></p>
+            <button id="valider">C'est parti !</button>
 
-    <p id="resultat"></p>
+            <p id="resultat"></p>
+            
+            <p id="nb-tentatives"></p>
+
+        </section>
+    </main>
 
 
 

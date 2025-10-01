@@ -130,7 +130,32 @@ switch (JOUR_SEMAINE) {
         P_RESULTAT4.textContent = "Nope";
 }
 // Attention : 
-// TODO compléter avec le cours
+// Attention, dans le switch, on ne peut pas mettre de comparaison telle que :
+let note = 14;
+switch(note) {
+    case note < 10 : 
+        //ne fonctionnera pas, le switch va regarder
+        // if(note === (note < 10)) -> (14 === false)
+}
+
+// * ( en fait si on peut en trichant mais on le fait rarement parce que beaucoup de dev trouvent ça berk et c'est un des rares où on peut )
+// * on peut tricher en mettant true dans le switch puisqu'on veut rentrer dans le case qui vaut true
+switch(true) {
+    // if note < 10 === true
+    case note < 10 :
+        console.log("note inférieure à 10 : bof");
+        break;
+    // if note === 10 === true
+    case note === 10 :
+        console.log("moyenne tout pile");
+        break;
+    // if note > 10 === true
+    case note > 10 : 
+        console.log("note supérieure à la moyenne : cool");
+        break;
+    default :
+        console.log("erreur");  
+}
 
 //?---------------
 // ? La ternaire :
@@ -139,7 +164,7 @@ switch (JOUR_SEMAINE) {
 const P_RESULTAT5 = document.getElementById('resultat5');
 let quantitePatates = 5;
 
-// * Sans la tarnaire :
+// * Sans la ternaire :
     // if (quantitePatates > 1) {
     // P_RESULTAT5l;textContent = `Il reste ${quantitePatates} patates.`
 
@@ -150,7 +175,7 @@ let quantitePatates = 5;
 if (quantitePatates > 1) {P_RESULTAT5;textContent = `Il reste ${quantitePatates} patate${ (quantitePatates > 1)? 's' : ''} `;
 // = SI quantite_patates > 1 , alors la chaine de caractère au bout de patate est un 's'.
 }
-//* On évite de faire de sternaires dans des ternaires dans des tranaires, sinon le code devient illisible !
+//* On évite de faire des ternaires dans des ternaires dans des tranaires, sinon le code devient illisible !
 
 
 // ? Le coalesce

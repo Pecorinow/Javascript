@@ -4,3 +4,53 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #f0e3ff;
+}
+
+
+
+section {
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: #d2c1f7;
+    box-shadow: 0px 8px 6px rgba(135, 69, 173, 0.5);
+    border-radius: 20px;
+    padding:30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Chewy';
+    color:rgb(135, 69, 173);
+    font-size: 3rem;
+}
+
+.p_intro {
+    text-align: center;
+}
+
+button {
+    background: linear-gradient(130deg, #ffc971, #faa83d);
+    border: 1px solid #ff9505;
+    border-radius: 50px;
+    padding:10px;
+
+}
+
+.img {
+    border-radius: 15px;
+}
+
+
+
+
+
+
