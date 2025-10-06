@@ -28,8 +28,8 @@ let tabLength = TAB_PRENOM.length;
 
 BTN_TIRAGE.addEventListener('click', () => {
     random = Math.floor(Math.random() * tabLength + 0);
-    if( random == tabLength ) {
-        
+    if( random == tabLength ) { //! ça ne peut pas être == tabLength, car tabLength = longueur du tableau, PAS l'index d'un nom !
+        P_AFFICHAGE_TIR.textContent = `Pas de bol ${}`;
     }
 
 });
