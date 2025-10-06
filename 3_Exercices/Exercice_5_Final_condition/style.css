@@ -21,7 +21,7 @@ section {
     align-items: center;
     gap:20px;
     background-color: #d2c1f7;
-    box-shadow: 0px 8px 6px rgba(135, 69, 173, 0.5);
+    box-shadow: 4px 10px 10px rgba(135, 69, 173, 0.5); /*! Pourquoi ne marche pas ?? */
     border-radius: 20px;
     padding:30px;
     font-family: 'Montserrat', sans-serif;
@@ -37,20 +37,40 @@ h1 {
     text-align: center;
 }
 
+.titre_intro {
+    color:#ff9505;
+    font-weight: bold;
+}
+
 button {
-    background: linear-gradient(130deg, #ffc971, #faa83d);
+    background: linear-gradient(210deg, #ffc971, #ff9505);
+    background-size: 200% 100%;
+    /* = background 2x plus large que haut, à déplacer au :hover */
+    background-position: 0% 0%;
+    transition: background-position 0.5s ease;
+    /* 0.5s = vitesse de transition de l'animation */
     border: 1px solid #ff9505;
     border-radius: 50px;
+    box-shadow: 2px 5px 2px (rgba(255, 149, 5, 0.1));
     padding:10px;
-
 }
+
+button:hover {
+    background-position: 100% 0%;
+    /* = déplacer le background de 100% sur la largeur pour un effet de dégradé animé ! */
+}
+/** DÉGRADÉ ANIMÉ : 
+1) Sur l'objet à animer, créer une background-size plus large que la taille de l'objet, qui se déplacera au :hover.
+2) Donner une background-position à 0% de largeur et 0% de hauteur.
+3) Donner une vitesse de transition à la background-position.
+4) Au :hover, déplacer le background de 100% sur la largeur pour un effet de dégradé animé ! */
 
 .img {
     border-radius: 15px;
 }
 
 
-
+/*#faa83d
 
 
 

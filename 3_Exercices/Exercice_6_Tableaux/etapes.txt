@@ -1,0 +1,27 @@
+1) JS : Créer un tableau de prénoms vide
+2) HTML :
+- Créer un input Prénoms,
+- un bouton Ajouter,
+- un <p> d'affichage des prénoms
+- un champ <p> pour erreur.
+
+Quand on clique sur Ajouter
+-> on récup la valeur de l'Input et, 
+    -> SI la valeur n'est pas valide, message d'erreur dans le <p> erreur
+    -> SI elle n'est pas vide, on ajoute un nouveau prénom au tableau.
+
+
+Etape 2 :
+
+En HTML :
+1) Créer un bouton Tirage au sort
+2) Créer un <p> d'affichage du prénom tiré au sort
+En JS :
+3) Créer une variable vide Random
+
+Quand on clique sur Tirage au sort
+-> on aloue une valeur random à Random, entre 0 et le nombre d'éléments dans le tableau au moment du tirage, et
+-> SI la valeur de random == l'index d'un prénom :
+    -> On affiche dans le <p> le prénom tiré au sort
+    -> Le prénom tiré au sort est supprimé du tableau
+    -> Reset du <p> d'affichage des prénoms SANS le prénom sélectionné

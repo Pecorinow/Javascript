@@ -75,10 +75,11 @@ BTN_DIFF.addEventListener('click', () => {
 
 BTN_VALIDER.addEventListener('click', () => {
     let nbTest = INPUT_TEST.valueAsNumber;
-    //* On avait créé une ligne let nbMystere = nbMystere.valueAsNumber; => erreur, car nbMystere est un nombre généré par Math.random, et PAS un élément HTML car il n'est pas relié à un id dans le html.
+    //* On avait créé ici une ligne let nbMystere = NB_MYSTERE.valueAsNumber; => erreur, car nbMystere est déjà un nombre généré par Math.random, et PAS un élément HTML, car il n'est pas relié à un id dans le html.
     // => on ne peut pas y appliquer la propriété .value ou valueAsNumber, car on ne peut récupérer la valeur que d'un élément html (comme INPUT_TEST qui est une référence à l'élément html nbTest).
     // Or, ici, on essayait de récupérer la valeur d'un nombre qui est déjà une valeur en soi, comme si on avait écrit 7.valueAsNumber.
     //* => .value ou .valueAsNumber sert à récupérer une valeur stockée dans un élément HTML, mais est inutile pour appeler une valeur en soi !
+    // En cas de valeur "brute" comme c'est le cas ici, on peut juste l'appeler en écrivant nbMystere 
 
 
     if (isNaN(nbTest) || nbTest > max || nbTest <= 0) {
