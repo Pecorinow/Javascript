@@ -25,3 +25,20 @@ Quand on clique sur Tirage au sort
     -> On affiche dans le <p> le prénom tiré au sort
     -> Le prénom tiré au sort est supprimé du tableau
     -> Reset du <p> d'affichage des prénoms SANS le prénom sélectionné
+
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: linear-gradient(#EEAECA, #94BBE9);
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+    gap : 1.5rem;
+}
