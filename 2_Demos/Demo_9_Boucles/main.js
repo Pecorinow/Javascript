@@ -32,7 +32,7 @@ do {
 alert('Bienvenue '+ prenom2);
 
 //! Attention:  Dans le cas du do... while, il se fera toujours au moins une fois, même si la condition de départ n'est pas respectée !
-//! Pourquoi ? Car il fait l'action AVANT de vérifier la condition.
+//! Pourquoi ? Car il fait l'ACTION AVANT de vérifier la CONDITION.
 // Ex : Si on veut ajouter 1 à un nombre tant qu'il est en dessous de 3, mais qu'on commence à compter à 5, le do... while ajoutera d'abord 1 à 5, PUIS il constatera que 5 est plus grand que 3 et sortira de la boucle -> La condition n'est pas remplie mais l'instruction a quand-même été exécutée.
 
 
@@ -82,13 +82,15 @@ let vetements = ['Salopette', 'Chaussette', 'Slippp', 'Top'];
 console.log('FOR IN');
 for (let indice in vetements){
     console.log(`Vetements n°${parseInt(indice) + 1} : ${vetements[indice]}`);
-} // La variable VETEMENT peut s'appeler comme on veut mais elle contiendra les INDICES de chaque élément.
+} // La variable VETEMENTS peut s'appeler comme on veut mais elle contiendra les INDICES de chaque élément.
 
 
 //? for of :    
-console.log('FOR OF');
-for(let vetements of vetements){
+console.log("FOR OF");
+for(let vetement of vetements){
     // la variable VETEMENTS peut s'appeler comme on veut mais elle contiendra les différentes VALEURS de chaque élement
+    console.log(vetement);
+    // ! plus moyen d'avoir l'indice de la valeur
 }
 
 
