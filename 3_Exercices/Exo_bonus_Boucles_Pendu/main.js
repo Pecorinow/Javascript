@@ -80,23 +80,42 @@ INPUT_PROP.addEventListener('keydown', (e) => {
 // Ce qu'on veut :
 // - Un tableau de lettres déjà jouées
 // - Une variable nbTentatives = 20
-// Une fonction Ajouter :
+
+// - Une fonction Ajouter :
 // 
-// - Si lettre incorrecte :
-//   Si nombre tentatives <= 20 :
+// - Si nombre tentatives <= 20 :
+//      Si lettre incorrecte :
 //      => 1) P_RESULT annonce 'Lettre incorrecte !'.
 //         3) nbTentatives -1
 //         4) P_NB_TENTATIVES affiche nbTentatives
 //         5) lettre jouée est push dans tabLettresJouees
 //         6) P_LETTRES_JOUEES affiche le tabLettresJouees
-//   Sinon :
+//      Si lettre correspond à un index de tabNoms :
+//          S'il reste des _ dans le mot :
+//             => 1) Remplacer un _ par la lettre à l'index correspondant.
+//                2) P_RESULT annonce 'Bravo !'.
+//          Sinon : 
+//             => P_RESULT annonce 'Bravo, tu as deviné le nom de mon chat tabNoms[randomIndex] !'
+// - Si nombre de tentatives = 0 :
 //      => P_RESULT annonce `Pas de bol, tu as épuisé tes tentatives, le nom de mon chat était tabNoms[randomIndex]`.
-// - Si lettre correspond à un index de tabNoms :
-//      S'il reste des _ dans le mot :
-//      => 1) Remplacer un _ par la lettre à l'index correspondant.
-//         2) P_RESULT annonce 'Bravo !'.
-//      Sinon : 
-//      => P_RESULT annonce 'Bravo, tu as deviné le nom de mon chat tabNoms[randomIndex] !'
+// - 
 //      
 
-
+function ajouter() {
+    tabLettresJouees = [];
+    let nbTentatives = 5;
+    proposition = INPUT_PROP.value;
+    tabNoms[randomIndex].forEach((lettre) => {
+        for(i = 5; i > 0 ; i - 1) {
+            if(lettre != proposition) {
+                P_RESULT.textContent = 'Lettre incorrecte !';
+                nbTentatives = nbTentatives - 1;
+                P_NB_TENTATIVES.textContent = `Il vous reste ${nbTentatives} !`;
+                tabLettresJouees.push(proposition);
+                P_LETTRES_JOUEES.textContent = tabLettresJouees.join(' ');
+            } else if( lettre = proposition) {
+                if() // Si une ouplueisurs valeur du mot est _
+            }
+        }
+    })
+};

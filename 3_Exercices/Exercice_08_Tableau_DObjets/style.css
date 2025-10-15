@@ -1,0 +1,55 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#EEAECA, #94BBE9);
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(rgb(204, 63, 125), #f09322);
+    padding: 80px;
+    border-radius: 1.5rem;
+    box-shadow: 6px 10px 10px rgba(204, 63, 125, 0.3);;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px rgb(39, 81, 184) solid;
+    border-radius: 1rem;
+    padding : 2rem;
+}
+
+.fa-regular, .fa-percent {
+    color:aqua;
+    font-size: 2rem;
+}
+
+.prixBarre {
+    text-decoration: line-through;
+}
+
+.hidePromo {
+    display:none;
+}
+
+.hidePrixPromo {
+    display: none;
+}

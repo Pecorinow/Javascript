@@ -25,7 +25,7 @@ section {
     justify-items: center;
     align-items: center;
     gap : 30px; 
-    box-shadow: 6px 10px 10px rgba(39, 81, 184, 0.3);
+    box-shadow: 6px 10px 10px rgba(39, 81, 184, 0.302);
 }
 
 div {
